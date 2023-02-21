@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header - Nav Bar (Implementado con Bootstrap)*/
+header {
+    width: 100%;
+    padding: 0.5em;
+    background-color: #6097BE;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logoNav {
+    width: 7em;
+    height: 2.33em;
+}
+
+.navbarItems {
+    margin: 0.625em 1.25em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    color: #191610;
+}
+
+.navbar-toggler {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: #191610 solid 2px;
+    border-radius: 50%;
+}
+
+/* Index - Inicio */
+/* Inicio sección Main Index */
+body {
+    background-color: #191610;
+}
+
+.imagenMain {
+    width: 100%;
+    height: 100%;
+}
+
+.titulosH1 {
+    margin: 1.25em auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+    color: #C2B8AE;
+}/*Esto incluye los H1 de todas las secciones para reducir un poco las lineas de codigo*/
+
+.parrafoBlanco {
+    margin: 1em 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    color: #C2B8AE;
+}
+
+/* Inicio Primera Seccion Index */
+.seccion1 {
+    padding: 0.5em;
+    background-color: #C2B8AE;
+}
+
+.titulosOscurosH2 {
+    padding: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75em;
+    text-align: center;
+    color: #191610;
+}/*Esto incluye los H2 Oscuros de todas las secciones para reducir un poco las lineas de codigo*/
+
+.parrafoNegro {
+    margin: 1em 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    color: #191610;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5em;
+}
+
+/* Inicio Segunda Seccion Index */
+.seccion2 {
+    padding: 0.5em;
+}
+
+.titulosBlancosH2 {
+    padding: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75em;
+    text-align: center;
+    color: #C2B8AE;
+}/*Esto incluye los H2 Blancos de todas las secciones para reducir las lineas de codigo*/
+
+.contenidoSeccion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.imgSeccion2 {
+    display: block;
+    margin: 0.5em auto;
+    width: 70%;
+    height: 100%;
+}
+
+.divSeccion2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.botonSeccion2 {
+    margin: 0.33em;
+    padding: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    border: solid;
+    border-radius: 5px;
+    background-color: #1E3748;
+    color: #C2B8AE;
+}
+
+.botonSeccion2:hover {
+    transition-duration: 0.3s;
+    background-color: #3d6885;
+}
+
+/*Inicio Tercera Seccion Index */
+.seccion3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    background-color: #C2B8AE;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0.3em;
+}
+
+.tablaSeccion3 {
+    text-align: center;
+    vertical-align: middle;
+    border: #191610 solid;
+    color: #191610;
+}
+
+th,
+td {
+    border-width: 0.05em;
+    border: #191610 solid;
+}
+
+/* Footer */
+footer {
+    padding: 0.5em;
+    background-color: #6097BE;
+}
+
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.footerItems {
+    display: inline-block;
+    margin: 0.2em 0.2em;
+}
+
+.parrafoFooter1 {
+    margin: 1.25em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: center;
+    color: #191610;
+}
+
+.ultimoTexto {
+    text-align: center;
+}
+
+/* Inicio La Banda */
+.accordion-header {
+    display: flex;
+    justify-content: center;
+}
+
+.accordion-button {
+    width: 60%;
+    margin: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    border: #191610 solid 2px;
+    border-radius: 25px;
+    box-shadow: none;
+    background-color: #bb935e;
+    color: #191610;
+}
+
+.accordion-button:not(.collapsed) {
+    border-color: #191610;
+    box-shadow: none;
+    background-color: #dfb682;
+    color: #191610;
+}
+
+.accordion-button:focus {
+    border-color: #191610;
+    box-shadow: none;
+}
+
+.bandaSeccionBlanca {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background-color: #C2B8AE;
+}
+
+.bandaSeccionOscura {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background-color: #413e37;
+}
+
+/* Inicio Discografia */
+.discografiaSeccionOscura {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.listaSeccionOscura {
+    margin: 0.5em 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #C2B8AE;
+}
+
+/* Secciones Blancas Discografia */
+.fondoBlanco {
+    background-color: #C2B8AE;
+}
+
+.discografiaSeccionBlanca {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.listaSeccionBlanca {
+    margin: 0.5em 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #191610;
+}
+
+.imagenDiscografia {
+    display: block;
+    width: 66%;
+    height: 66%;
+    margin: 0.2em auto;
+    border: #615d5d solid;
+}
+
+/* Inicio Media */
+.contenedorMedia {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6"
+        "imagen7"
+        "imagen8"
+        "imagen9"
+        "imagen10"
+        "imagen11"
+        "imagen12"
+        "imagen13";
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+}
+
+.imagen4 {
+    grid-area: imagen4;
+}
+
+.imagen5 {
+    grid-area: imagen5;
+}
+
+.imagen6 {
+    grid-area: imagen6;
+}
+
+.imagen7 {
+    grid-area: imagen7;
+}
+
+.imagen8 {
+    grid-area: imagen8;
+}
+
+.imagen9 {
+    grid-area: imagen9;
+}
+
+.imagen10 {
+    grid-area: imagen10;
+}
+
+.imagen11 {
+    grid-area: imagen11;
+}
+
+.imagen12 {
+    grid-area: imagen12;
+}
+
+.imagen13 {
+    grid-area: imagen13;
+}
+
+.imagenesMedia {
+    display: block;
+    width: 75%;
+    height: 75%;
+    margin: 0.2em auto;
+    border: #C2B8AE solid;
+}
+
+.captionImagen {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1em 0.2em 3em;
+    color: #C2B8AE;
+}
+
+/* Inicio Contacto */
+.mainContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formSeccion {
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.formContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #C2B8AE;
+}
+
+.labelContacto {
+    padding: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #191610;
+}
+
+.inputContacto {
+    margin: 1em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #191610;
+}
+
+.textContacto {
+    width: 95%;
+    margin: 0.125em 0.5em;
+}
+
+.parrafoForm {
+    padding: 0.5em 0.5em 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #191610;
+}
+
+.contenedorSubmit {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 1em;
+}
+
+.submit {
+    padding: 0.5em;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* Estilos ajustados a un ancho minimo de 768 pixeles */
+@media screen and (min-width:768px) {
+
+    /* Media Query Seccion Index */
+    .titulosH1 {
+        margin: 1.5em auto;
+        font-size: 2.75em;
+    }
+
+    .parrafoNegro {
+        margin: 1.25em 2.5em;
+        font-size: 1.25em;
+    }
+
+    .parrafoBlanco {
+        margin: 1.25em 2.5em;
+        font-size: 1.25em;
+    }
+
+    .titulosBlancosH2 {
+        padding: 0.75em;
+        font-size: 2em;
+    }
+
+    .titulosOscurosH2 {
+        padding: 0.75em;
+        font-size: 2em;
+    }
+
+    .contenidoSeccion2 {
+        flex-direction: row;
+    }
+
+    .imgSeccion2 {
+        width: 85%;
+        margin: 1.5em auto;
+    }
+
+    .seccion3 {
+        padding: 0.5em 4em;
+    }
+
+    th,
+    td {
+        font-size: 1.25em;
+    }
+
+    /* Media Query Seccion La Banda */
+    .accordion-button {
+        width: 72.5%;
+        font-size: 1em;
+    }
+
+    .bandaSeccionBlanca {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+
+    .bandaSeccionOscura {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+
+    /* Media Query Seccion Discografia */
+    .discografiaSeccionOscura {
+        flex-direction: row;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+
+    .listaSeccionOscura {
+        margin: 0.75em 0.75em;
+    }
+
+    .discografiaSeccionBlanca {
+        flex-direction: row-reverse;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+
+    .listaSeccionBlanca {
+        margin: 0.75em 0.75em;
+    }
+
+    .imagenDiscografia {
+        width: 75%;
+        height: 75%;
+        margin: 0.4em auto;
+    }
+
+    /* Media Query Seccion Media */
+    .contenedorMedia {
+        grid-template-areas:
+            "imagen1 imagen2"
+            "imagen3 imagen4"
+            "imagen5 imagen6"
+            "imagen7 imagen8"
+            "imagen9 imagen10"
+            "imagen11 imagen12"
+            "imagen13 imagen13";
+    }
+
+    .imagenesMedia {
+        object-fit: cover;
+    }
+
+    /* Media Query Seccion Contacto */
+    .formSeccion {
+        padding: 2em;
+        margin: 2em;
+    }
+}
+
+/* Estilos ajustados a un ancho minimo de 768 pixeles */
+@media screen and (min-width:992px) {
+
+    /* Media Query Seccion Index */
+    header a:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 0.5s;
+        padding: 3px;
+        text-decoration: underline;
+    }
+
+    .logoLink:hover {
+        transform: none;
+        padding: 0;
+    }
+
+    .logoNav {
+        margin-right: 5em;
+        margin-left: 2em;
+    }
+
+    .titulosH1 {
+        margin: 1.5em auto;
+        font-size: 3.25em;
+    }
+
+    .parrafoNegro {
+        margin: 1.5em 6em;
+        font-size: 1.5em;
+    }
+
+    .parrafoBlanco {
+        margin: 1.5em 6em;
+        font-size: 1.5em;
+    }
+
+    .titulosOscurosH2 .titulosBlancosH2 {
+        padding: 1.25em;
+        font-size: 2.5em;
+    }
+
+    .titulosOscurosH2 {
+        padding: 1.25em;
+        font-size: 2.5em;
+    }
+
+    iframe {
+        width: 840px;
+        height: 460px;
+    }
+
+    .seccion3 {
+        padding: 0.5em 7em;
+    }
+
+    .tablaSeccion3 {
+        max-width: 1020px;
+    }
+
+    /* Media Query Seccion La Banda */
+    .accordion-button {
+        width: 85%;
+        font-size: 1.1em;
+    }
+
+    .bandaSeccionBlanca {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+
+    .bandaSeccionOscura {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+
+    /* Media Query Seccion Discografia */
+    .discografiaSeccionOscura {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+
+    .listaSeccionOscura {
+        margin: 1em 1em;
+        font-size: 1.1em;
+    }
+
+    .discografiaSeccionBlanca {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+
+    .listaSeccionBlanca {
+        margin: 1em 1em;
+        font-size: 1.1em;
+    }
+
+    /* Media Query Seccion Media */
+    .contenedorMedia {
+        grid-template-areas:
+            "imagen1 imagen2 imagen3"
+            "imagen4 imagen5 imagen6"
+            "imagen7 imagen8 imagen9"
+            "imagen10 imagen11 imagen12"
+            ". imagen13 .";
+    }
+
+    .imagenesMedia {
+        width: 80%;
+        height: 60%;
+    }
+
+    /* Media Query Seccion Contacto */
+    .formSeccion {
+        padding: 2em;
+        margin: 2em;
+    }
+}

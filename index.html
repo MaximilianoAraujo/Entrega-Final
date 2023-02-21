@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Inicio - Metallica Fan Page</title>
+</head>
+
+<!-- Inicio de Header - Nav Bar (Implementado con Bootstrap)-->
+<!-- Las items del nav bar tienen tienen la pseudoclase :hover -->
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="logoLink" href="./index.html"><img class="logoNav" src="./img/logo-navbar.png"
+                        alt="logo Metallica"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style>
+                    <ul class="navbar-nav">
+                        <li class="navbarItems">
+                            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="navbarItems">
+                            <a class="nav-link" href="./secciones/banda.html">LA BANDA</a>
+                        </li>
+                        <li class="navbarItems">
+                            <a class="nav-link" href="./secciones/discografia.html">DISCOGRAFÍA</a>
+                        </li>
+                        <li class="navbarItems">
+                            <a class="nav-link" href="./secciones/media.html">MEDIA</a>
+                        </li>
+                        <li class="navbarItems">
+                            <a class="nav-link" href="./secciones/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Inicio sección Main Index -->
+    <main>
+        <figure>
+            <img class="imagenMain" src="./img/imagen-inicio.jpg" alt="Metallica posando para una foto">
+        </figure>
+        <div class="mainIndex">
+            <h1 class="titulosH1">¡Bienvenidos!</h1>
+            <p class="parrafoBlanco">Este sitio está dedicado a traerte novedades, curiosidades e información sobre unas
+                de
+                las mejores bandas de Metal de la historia. ¿Tenés ganas de conocer los inicios de la banda? ¿Ver
+                imágenes de ellos en sus distintos conciertos a través del mundo? ¿Escuchar tanto sus temas clásicos
+                como los más nuevos? ¡Entonces date una vuelta por estos lugares y disfruta de todo el contenido que
+                podemos ofrecerte!</p>
+        </div>
+
+        <!-- Inicio Primera Seccion Index -->
+        <section class="seccion1">
+            <h2 class="titulosOscurosH2">¿Ya escuchaste lo nuevo de METALLICA?</h2>
+            <p class="parrafoNegro">En este 2023 METALLICA sacará un nuevo disco titulado "72 Seasons". La fecha de
+                lanzamiento es el 14 de Abril, pero ya podemos escuchar algunas de las canciones de este nuevo álbum.
+                Para
+                calmar un poco la ansiedad y mientras esperamos a esa fecha, hecha un vistazo al último Music Video del
+                grupo.</p>
+            <div class="video">
+                <iframe width="630" height="354" src="https://www.youtube.com/embed/ZDyDpdFZHBo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Inicio Segunda Seccion Index -->
+        <!-- Las imagenes tienen animaciones traidas de AOS y el boton tiene un :hover-->
+        <section class="seccion2">
+            <h2 class="titulosBlancosH2 tituloPosts">Mira los últimos posts de METALLICA</h2>
+            <div class="contenidoSeccion2">
+                <span>
+                    <a href="https://www.instagram.com/p/CnnUrsVt56G/" target="_blank"><img data-aos="flip-right"
+                            data-aos-duration="1350" class="imgSeccion2" src="./img/post-uno.JPG"
+                            alt="Foto de Metallica de su nueva canción"></a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/p/CnnUv-GNdoz/" target="_blank"><img data-aos="flip-right"
+                            data-aos-duration="1350" class="imgSeccion2" src="./img/post-dos.JPG"
+                            alt="Preview del video de la nueva canción"></a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/p/ClgrvqPLJ8p/" target="_blank"><img data-aos="flip-right"
+                            data-aos-duration="1350" class="imgSeccion2" src="./img/post-tres.JPG"
+                            alt="Preview del video del nuevo album"></a>
+                </span>
+            </div>
+            <div class="divSeccion2">
+                <p class="parrafoBlanco">Si querés ver más posts, podés seguirlos en su Instagram Oficial</p>
+                <a class="botonSeccion2" href="https://www.instagram.com/metallica/" target="_blank">Ir a Instagram</a>
+            </div>
+        </section>
+
+        <!-- Inicio Tercera Seccion Index -->
+        <!-- Tabla responsive con Bootstrap -->
+        <Section class="seccion3">
+            <h2 class="titulosOscurosH2">Tour: próximas fechas</h2>
+            <table class="table tablaSeccion3">
+                <thead>
+                    <tr>
+                        <th scope="col">FECHA</th>
+                        <th scope="col">LUGAR</th>
+                        <th scope="col">ESTADIO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>27 de Abril, 2023</td>
+                        <td>Amsterdan, Países Bajos</td>
+                        <td>Johan Cruijff Arena</td>
+                    </tr>
+                    <tr>
+                        <td>29 de Abril, 2023</td>
+                        <td>Amsterdan, Países Bajos</td>
+                        <td>Johan Cruijff Arena</td>
+                    </tr>
+                    <tr>
+                        <td>17 de Mayo, 2023</td>
+                        <td>París, Francia</td>
+                        <td>Stade de France</td>
+                    </tr>
+                    <tr>
+                        <td>19 de Mayo, 2023</td>
+                        <td>París, Francia</td>
+                        <td>Stade de France</td>
+                    </tr>
+                    <tr>
+                        <td>26 de Mayo, 2023</td>
+                        <td>Hamburgo, Alemania</td>
+                        <td>Volksparkstadion</td>
+                    </tr>
+                    <tr>
+                        <td>28 de Mayo, 2023</td>
+                        <td>Hamburgo, Alemania</td>
+                        <td>Volksparkstadion</td>
+                    </tr>
+                    <tr>
+                        <td>8 de Junio, 2023</td>
+                        <td>Castle Donington, Inglaterra</td>
+                        <td>Download Festival, Donington Park</td>
+                    </tr>
+                    <tr>
+                        <td>10 de Junio, 2023</td>
+                        <td>Castle Donington, Inglaterra</td>
+                        <td>Download Festival, Donington Park</td>
+                    </tr>
+                    <tr>
+                        <td>16 de Junio, 2023</td>
+                        <td>Gotemburgo, Suecia</td>
+                        <td>Ullevi Stadium</td>
+                    </tr>
+                    <tr>
+                        <td>18 de Junio, 2023</td>
+                        <td>Gotemburgo, Suecia</td>
+                        <td>Ullevi Stadium</td>
+                    </tr>
+                    <tr>
+                        <td>4 de Agosto, 2023</td>
+                        <td>East Rutherford, Nueva Jersey, Estados Unidos</td>
+                        <td>MetLife Stadium</td>
+                    </tr>
+                    <tr>
+                        <td>4 de Agosto, 2023</td>
+                        <td>East Rutherford, Nueva Jersey, Estados Unidos</td>
+                        <td>MetLife Stadium</td>
+                    </tr>
+                    <tr>
+                        <td>11 de Agosto, 2023</td>
+                        <td>Montreal, Quebec, Canadá</td>
+                        <td>Stade Olympique</td>
+                    </tr>
+                    <tr>
+                        <td>13 de Agosto, 2023</td>
+                        <td>Montreal, Quebec, Canadá</td>
+                        <td>Stade Olympique</td>
+                    </tr>
+                </tbody>
+            </table>
+        </Section>
+    </main>
+
+    <!-- Inicio Footer -->
+    <footer>
+        <p class="parrafoFooter1">Sigue a METALLICA en sus redes sociales oficiales</p>
+        <div>
+            <ul class="itemContainer">
+                <li class="footerItems">
+                    <a href="https://www.facebook.com/Metallica/" target="_blank"><img src="./img/logo-facebook.png"
+                            alt="logo de Facebook"></a>
+                </li>
+                <li class="footerItems">
+                    <a href="https://www.instagram.com/metallica/" target="_blank"><img src="./img/logo-instagram.png"
+                            alt="logo de instagram"></a>
+                </li>
+                <li class="footerItems">
+                    <a href="https://twitter.com/metallica" target="_blank"><img src="./img/logo-twitter.png"
+                            alt="logo de twitter"></a>
+                </li>
+                <li class="footerItems">
+                    <a href="https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB" target="_blank"><img
+                            class="logoSpotify" src="./img/logo-spotify.png" alt="logo de spotify"></a>
+                </li>
+                <li class="footerItems">
+                    <a href="https://www.youtube.com/user/MetallicaTV" target="_blank"><img src="./img/logo-youtube.png"
+                            alt="logo de youtube"></a>
+                </li>
+            </ul>
+        </div>
+        <p class="ultimoTexto">Todos los derechos de autor pertenecen a ©Metallica. Este sitio web fue hecho solo con
+            fines de aprendizaje
+        </p>
+        <p class="ultimoTexto">Copyright © 2023 - Desarrollado por Maximiliano Araujo </p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
