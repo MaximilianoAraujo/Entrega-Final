@@ -1,0 +1,83 @@
+.contenedorMedia {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6"
+        "imagen7"
+        "imagen8"
+        "imagen9"
+        "imagen10"
+        "imagen11"
+        "imagen12"
+        "imagen13";
+
+    .imagenesMedia {
+        @include imagenes(75%, 75%, 0.2em auto, #C2B8AE solid);
+    }
+
+    .captionImagen {
+        font-family: $font-family_1;
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 1em 0.2em 3em;
+        color: $color_2;
+    }
+}
+
+// Deje el grid area en este partial para evitar crear uno extra y tener partials con poco codigo
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+}
+
+.imagen4 {
+    grid-area: imagen4;
+}
+
+.imagen5 {
+    grid-area: imagen5;
+}
+
+.imagen6 {
+    grid-area: imagen6;
+}
+
+.imagen7 {
+    grid-area: imagen7;
+}
+
+.imagen8 {
+    grid-area: imagen8;
+}
+
+.imagen9 {
+    grid-area: imagen9;
+}
+
+.imagen10 {
+    grid-area: imagen10;
+}
+
+.imagen11 {
+    grid-area: imagen11;
+}
+
+.imagen12 {
+    grid-area: imagen12;
+}
+
+.imagen13 {
+    grid-area: imagen13;
+}

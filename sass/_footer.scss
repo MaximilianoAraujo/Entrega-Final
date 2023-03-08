@@ -1,0 +1,30 @@
+footer {
+    padding: 0.5em;
+    background-color: $background-color_1;
+
+    .parrafoFooter1 {
+        margin: 1.25em;
+        font-family: $font-family_1;
+        font-size: 1.25em;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        text-align: center;
+        color: $color_1;
+    }
+
+    .itemContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0px;
+
+        .footerItems {
+            display: inline-block;
+            margin: 0.2em 0.2em;
+        }
+    }
+
+    .ultimoTexto {
+        text-align: center;
+    }
+}

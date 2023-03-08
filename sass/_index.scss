@@ -1,0 +1,82 @@
+body {
+    background-color: $background-color_2;
+
+    main {
+        margin-top: 5.7em;
+
+        .imagenMain {
+            width: 100%;
+            height: 100%;
+        }
+
+        .seccion1 {
+            padding: 0.5em;
+            background-color: $background-color_3;
+
+            .video {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 0.5em;
+            }
+        }
+
+        .seccion2 {
+            padding: 0.5em;
+
+            .contenidoSeccion2 {
+                @include flex(column, center, center);
+                margin: 1em;
+
+                .imgSeccion2 {
+                    @include imagenes(70%, 100%, 0.2em auto, none)
+                }
+            }
+
+            .divSeccion2 {
+                @include flex(column, flex-start, center);
+                padding: 1rem;
+
+                .botonSeccion2 {
+                    margin: 0.33em;
+                    padding: 0.5em;
+                    font-family: $font-family_1;
+                    font-size: 1em;
+                    letter-spacing: 1px;
+                    word-spacing: 1px;
+                    border: solid;
+                    border-radius: 5px;
+                    background-color: $background-color_4;
+                    color: $color_2;
+
+                    &:hover {
+                        transition-duration: 0.3s;
+                        background-color: $background-color_5;
+                    }
+                }
+            }
+        }
+
+        .seccion3 {
+            @include flex(column, center, center);
+            padding: 0.5em;
+            background-color: $background-color_3;
+
+            .tablaSeccion3 {
+                text-align: center;
+                vertical-align: middle;
+                border: #191610 solid;
+                color: $color_1;
+
+                th {
+                    border-width: 0.05em;
+                    border: #191610 solid;
+                }
+
+                td {
+                    border-width: 0.05em;
+                    border: #191610 solid;
+                }
+            }
+        }
+    }
+}

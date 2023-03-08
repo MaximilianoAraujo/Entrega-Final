@@ -1,0 +1,292 @@
+@media screen and (min-width:768px) {
+    body {
+
+        main {
+
+            // Media Query de titulos y parrafos generales
+            .titulosH1 {
+                margin: 1.5em auto;
+                font-size: 2.75em;
+            }
+
+            .parrafoNegro {
+                margin: 1.25em 2.5em;
+                font-size: 1.25em;
+            }
+
+            .parrafoBlanco {
+                margin: 1.25em 2.5em;
+                font-size: 1.25em;
+            }
+
+            .titulosBlancosH2 {
+                padding: 0.75em;
+                font-size: 2em;
+            }
+
+            .titulosOscurosH2 {
+                padding: 0.75em;
+                font-size: 2em;
+            }
+
+            // Media Query Index
+            .seccion2 {
+
+                .contenidoSeccion2 {
+                    flex-direction: row;
+
+                    .imgSeccion2 {
+                        width: 85%;
+                        margin: 1.5em auto;
+                    }
+                }
+            }
+
+            .seccion3 {
+                padding: 0.5em 4em;
+
+                .tablaSeccion3 {
+
+                    th {
+                        font-size: 1.25em;
+                    }
+
+                    td {
+                        font-size: 1.25em;
+                    }
+                }
+            }
+
+            // Media Query seccion la banda
+            .accordion {
+
+                .bandaSeccionBlanca {
+                    padding-top: 0.4em;
+                    padding-bottom: 0.4em;
+
+                    .accordion-header {
+
+                        .accordion-button {
+                            font-size: 1em;
+                        }
+                    }
+                }
+
+                .bandaSeccionOscura {
+                    padding-top: 0.4em;
+                    padding-bottom: 0.4em;
+
+                    .accordion-header {
+
+                        .accordion-button {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+
+            // Media Query seccion Discografia
+            .fondoOscuro {
+
+                .discografiaSeccionOscura {
+                    flex-direction: row;
+                    padding-top: 0.4em;
+                    padding-bottom: 0.4em;
+
+                    .listaSeccionOscura {
+                        margin: 0.75em 0.75em;
+                    }
+
+                    .imagenDiscografia {
+                        width: 75%;
+                        height: 75%;
+                        margin: 0.4em auto;
+                    }
+                }
+            }
+
+            .fondoBlanco {
+
+                .discografiaSeccionBlanca {
+                    flex-direction: row-reverse;
+                    padding-top: 0.4em;
+                    padding-bottom: 0.4em;
+
+                    .listaSeccionBlanca {
+                        margin: 0.75em 0.75em;
+                    }
+
+                    .imagenDiscografia {
+                        width: 75%;
+                        height: 75%;
+                        margin: 0.4em auto;
+                    }
+                }
+            }
+
+            // Media Query seccion Media
+            .contenedorMedia {
+                grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "imagen5 imagen6" "imagen7 imagen8" "imagen9 imagen10" "imagen11 imagen12" "imagen13 imagen13";
+
+                .imagenesMedia {
+                    object-fit: cover;
+                }
+            }
+
+            // Media Query seccion Form
+            .formSeccion {
+                padding: 2em;
+                margin: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    body {
+
+        // Media Query de Header - Nav Bar
+        header {
+            a {
+                &:hover {
+                    transform: scale(1.1);
+                    transition-property: all;
+                    transition-duration: 0.5s;
+                    padding: 3px;
+                    text-decoration: underline;
+                }
+            }
+
+            .logoLink {
+                &:hover {
+                    transform: none;
+                    padding: 0;
+                }
+            }
+
+            .logoNav {
+                margin-right: 5em;
+                margin-left: 2em;
+            }
+        }
+
+        main {
+
+            // Media Query de titulos y parrafos generales
+            .titulosH1 {
+                margin: 1.5em auto;
+                font-size: 3.25em;
+            }
+
+            .parrafoNegro {
+                margin: 1.5em 6em;
+                font-size: 1.5em;
+            }
+
+            .parrafoBlanco {
+                margin: 1.5em 6em;
+                font-size: 1.5em;
+            }
+
+            .titulosOscurosH2 {
+                padding: 1.25em;
+                font-size: 2.5em;
+            }
+
+            .titulosBlancosH2 {
+                padding: 1.25em;
+                font-size: 2.5em;
+            }
+
+
+            // Media Query de Index
+            .seccion1 {
+
+                video {
+
+                    iframe {
+                        width: 840px;
+                        height: 460px;
+                    }
+                }
+            }
+
+            .seccion3 {
+                padding: 0.5em 7em;
+
+                .tablaSeccion3 {
+                    max-width: 1020px;
+                }
+            }
+
+
+            // Media Query de seccion La Banda
+            .accordion {
+
+                .bandaSeccionBlanca {
+                    padding-top: 0.6em;
+                    padding-bottom: 0.6em;
+
+                    .accordion-header {
+
+                        .accordion-button {
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+
+                .bandaSeccionOscura {
+                    padding-top: 0.6em;
+                    padding-bottom: 0.6em;
+
+                    .accordion-header {
+
+                        .accordion-button {
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+            }
+
+            // Media Query de seccion Discografia
+            .fondoOscuro {
+
+                .discografiaSeccionOscura {
+                    padding-top: 0.6em;
+                    padding-bottom: 0.6em;
+
+                    .listaSeccionOscura {
+                        margin: 1em 1em;
+                        font-size: 1.1em;
+                    }
+                }
+
+                .discografiaSeccionBlanca {
+                    padding-top: 0.6em;
+                    padding-bottom: 0.6em;
+
+                    .listaSeccionBlanca {
+                        margin: 1em 1em;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+
+            // Media Query de seccion Media
+            .contenedorMedia {
+                grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6" "imagen7 imagen8 imagen9" "imagen10 imagen11 imagen12" ". imagen13 .";
+
+                .imagenesMedia {
+                    width: 80%;
+                    height: 60%;
+                }
+            }
+
+            // Media Query de seccion Contactos
+            .formSeccion {
+                padding: 2em;
+                margin: 2em;
+            }
+        }
+    }
+}

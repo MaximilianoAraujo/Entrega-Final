@@ -1,0 +1,27 @@
+// Titulos h1 y h2 como parrafos estan incluidos en este partial para evitar repetir ponerlos en los distintos sections, divs y contenedores generales
+
+main {
+
+    .titulosH1 {
+        @include h1;
+
+    }
+
+    .parrafoBlanco {
+        @include parrafo;
+    }
+
+    .titulosOscurosH2 {
+        @include h2;
+        color: $color_1;
+    }
+
+    .parrafoNegro {
+        @include parrafo;
+        color: $color_1;
+    }
+
+    .titulosBlancosH2 {
+        @include h2;
+    }
+}

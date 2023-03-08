@@ -1,0 +1,87 @@
+@mixin h1 {
+    margin: 1.25em auto;
+    padding-top: 0.5em;
+    font-family: $font-family_1;
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+    color: $color_2;
+}
+
+@mixin parrafo {
+    margin: 1em 2em;
+    font-family: $font-family_1;
+    font-size: 1em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    color: $color_2;
+}
+
+@mixin h2 {
+    padding: 0.5em;
+    font-family: $font-family_1;
+    font-size: 1.75em;
+    text-align: center;
+    color: $color_2;
+}
+
+@mixin botonAcordion {
+    justify-content: center;
+    width: 60%;
+    margin: 0.5em;
+    font-family: $font-family_1;
+    font-size: 0.8em;
+    border: #191610 solid 2px;
+    border-radius: 25px;
+    box-shadow: none;
+    background-color: $background-color_6;
+    color: $color_1;
+
+    &:not(.collapsed) {
+        border-color: $border-color_1;
+        box-shadow: none;
+        background-color: $background-color_7;
+        color: $color_1;
+    }
+
+    &:focus {
+        border-color: $border-color_1;
+        box-shadow: none;
+    }
+
+    &::after {
+        margin-left: 0.5em;
+    }
+}
+
+@mixin listaDiscografia {
+    margin: 0.5em 0.5em;
+    font-family: $font-family_1;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: $color_2;
+}
+
+@mixin textoContacto {
+    font-family: $font-family_1;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: $color_1;
+}
+
+@mixin imagenes($width, $height, $margin, $border) {
+    display: block;
+    width: $width;
+    height: $height;
+    margin: $margin;
+    border: $border;
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

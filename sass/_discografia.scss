@@ -1,0 +1,35 @@
+.fondoOscuro {
+
+    .discografiaSeccionOscura {
+        @include flex(column, space-evenly, center);
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+
+        .imagenDiscografia {
+            @include imagenes(66%, 66%, 0.2em auto, #615d5d solid);
+        }
+
+        .listaSeccionOscura {
+            @include listaDiscografia
+        }
+    }
+}
+
+.fondoBlanco {
+    background-color: $background-color_3;
+
+    .discografiaSeccionBlanca {
+        @include flex(column, space-evenly, center);
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+
+        .imagenDiscografia {
+            @include imagenes(66%, 66%, 0.2em auto, #615d5d solid);
+        }
+
+        .listaSeccionBlanca {
+            @include listaDiscografia;
+            color: $color_1;
+        }
+    }
+}

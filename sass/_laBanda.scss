@@ -1,0 +1,32 @@
+.accordion {
+
+    .bandaSeccionBlanca {
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        background-color: $background-color_3;
+
+        .accordion-header {
+            display: flex;
+            justify-content: center;
+
+            .accordion-button {
+                @include botonAcordion
+            }
+        }
+    }
+
+    .bandaSeccionOscura {
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        background-color: $background-color_8;
+
+        .accordion-header {
+            display: flex;
+            justify-content: center;
+
+            .accordion-button {
+                @include botonAcordion
+            }
+        }
+    }
+}
