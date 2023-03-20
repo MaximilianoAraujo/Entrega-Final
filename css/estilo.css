@@ -171,7 +171,7 @@ body main .seccion3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2.5em 0em 3.5em;
+  padding: 2.5em 1em 3.5em;
   background-color: #191610;
 }
 body main .seccion3 .tablaSeccion3 {
@@ -400,18 +400,6 @@ body main .seccion3 .tablaSeccion3 td {
   body main .seccion3 .tablaSeccion3 td {
     font-size: 1.25em;
   }
-  body main .fondoOscuro .discografiaSeccionOscura {
-    flex-direction: row;
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
-  }
-  body main .fondoOscuro .discografiaSeccionOscura .listaSeccionOscura {
-    margin: 0.75em 0.75em;
-  }
-  body main .fondoOscuro .discografiaSeccionOscura .imagenDiscografia {
-    width: 75%;
-    height: 75%;
-  }
   body main .fondoBlanco .discografiaSeccionBlanca {
     flex-direction: row;
     padding-top: 0.4em;
@@ -450,7 +438,7 @@ body main .seccion3 .tablaSeccion3 td {
     transform: none;
     padding: 0;
   }
-  body header .logoNav {
+  body header .logoLink .logoNav {
     margin-right: 5em;
     margin-left: 2em;
   }
@@ -474,7 +462,7 @@ body main .seccion3 .tablaSeccion3 td {
     padding: 1.25em;
     font-size: 2.5em;
   }
-  body main .seccion1 video iframe {
+  body main .seccion1 .video iframe {
     width: 840px;
     height: 460px;
   }
