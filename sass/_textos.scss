@@ -11,16 +11,6 @@ main {
         @include parrafo;
     }
 
-    .titulosOscurosH2 {
-        @include h2;
-        color: $color_1;
-    }
-
-    .parrafoNegro {
-        @include parrafo;
-        color: $color_1;
-    }
-
     .titulosBlancosH2 {
         @include h2;
     }

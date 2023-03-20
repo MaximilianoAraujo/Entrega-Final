@@ -2,16 +2,20 @@ body {
     background-color: $background-color_2;
 
     main {
-        margin-top: 5.7em;
+        margin-top: 5.3em;
 
         .imagenMain {
             width: 100%;
             height: 100%;
         }
 
+        .caja{
+            margin-top: 7em;
+            margin-bottom: 7em;
+        }
+
         .seccion1 {
-            padding: 0.5em;
-            background-color: $background-color_3;
+            @include secciones;
 
             .video {
                 display: flex;
@@ -21,14 +25,21 @@ body {
         }
 
         .seccion2 {
-            padding: 0.5em;
+            @include secciones;
+            border-bottom: solid #C2B8AE 3px;
 
             .contenidoSeccion2 {
                 @include flex(column, center, center);
                 margin: 1em;
 
                 .imgSeccion2 {
-                    @include imagenes(70%, 100%, 0.2em auto, none)
+                    @include imagenes(70%, 100%, 1em auto, none);
+
+                    &:hover {
+                        transform: scale(1.15);
+                        transition-property: all;
+                        transition-duration: 1s;
+                    }
                 }
             }
 
@@ -47,6 +58,7 @@ body {
                     border-radius: 5px;
                     background-color: $background-color_4;
                     color: $color_2;
+                    text-decoration: none;
 
                     &:hover {
                         transition-duration: 0.3s;
@@ -58,23 +70,23 @@ body {
 
         .seccion3 {
             @include flex(column, center, center);
-            padding: 0.5em;
-            background-color: $background-color_3;
+            padding: 2.5em 0em 3.5em;
+            background-color: $background-color_2;
 
             .tablaSeccion3 {
                 text-align: center;
                 vertical-align: middle;
-                border: #191610 solid;
-                color: $color_1;
+                border: #C2B8AE solid;
+                color: $color_2;
 
                 th {
                     border-width: 0.05em;
-                    border: #191610 solid;
+                    border: #C2B8AE solid;
                 }
 
                 td {
                     border-width: 0.05em;
-                    border: #191610 solid;
+                    border: #C2B8AE solid;
                 }
             }
         }

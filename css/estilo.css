@@ -14,31 +14,13 @@ main .titulosH1 {
   color: #C2B8AE;
 }
 main .parrafoBlanco {
-  margin: 1em 2em;
+  margin: 3em 2em;
   font-family: "Poppins", sans-serif;
   font-size: 1em;
   letter-spacing: 1px;
   word-spacing: 2px;
   text-align: center;
   color: #C2B8AE;
-}
-main .titulosOscurosH2 {
-  padding: 0.5em;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.75em;
-  text-align: center;
-  color: #C2B8AE;
-  color: #191610;
-}
-main .parrafoNegro {
-  margin: 1em 2em;
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  text-align: center;
-  color: #C2B8AE;
-  color: #191610;
 }
 main .titulosBlancosH2 {
   padding: 0.5em;
@@ -69,7 +51,7 @@ header .navbar-toggler {
   border: #191610 solid 2px;
   border-radius: 50%;
 }
-header .navbarItems {
+header div .navbarItems {
   margin: 0.625em 1.25em;
   font-family: "Poppins", sans-serif;
   font-size: 1em;
@@ -91,13 +73,13 @@ footer .parrafoFooter1 {
   text-align: center;
   color: #191610;
 }
-footer .itemContainer {
+footer div .itemContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-left: 0px;
 }
-footer .itemContainer .footerItems {
+footer div .itemContainer .footerItems {
   display: inline-block;
   margin: 0.2em 0.2em;
 }
@@ -109,15 +91,23 @@ body {
   background-color: #191610;
 }
 body main {
-  margin-top: 5.7em;
+  margin-top: 5.3em;
 }
 body main .imagenMain {
   width: 100%;
   height: 100%;
 }
+body main .caja {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
 body main .seccion1 {
-  padding: 0.5em;
-  background-color: #C2B8AE;
+  display: block;
+  margin: auto;
+  max-width: 85%;
+  padding: 2.5em 0em 3.5em;
+  background-color: #191610;
+  border-top: solid #C2B8AE 3px;
 }
 body main .seccion1 .video {
   display: flex;
@@ -125,7 +115,13 @@ body main .seccion1 .video {
   padding-bottom: 0.5em;
 }
 body main .seccion2 {
-  padding: 0.5em;
+  display: block;
+  margin: auto;
+  max-width: 85%;
+  padding: 2.5em 0em 3.5em;
+  background-color: #191610;
+  border-top: solid #C2B8AE 3px;
+  border-bottom: solid #C2B8AE 3px;
 }
 body main .seccion2 .contenidoSeccion2 {
   display: flex;
@@ -138,8 +134,13 @@ body main .seccion2 .contenidoSeccion2 .imgSeccion2 {
   display: block;
   width: 70%;
   height: 100%;
-  margin: 0.2em auto;
+  margin: 1em auto;
   border: none;
+}
+body main .seccion2 .contenidoSeccion2 .imgSeccion2:hover {
+  transform: scale(1.15);
+  transition-property: all;
+  transition-duration: 1s;
 }
 body main .seccion2 .divSeccion2 {
   display: flex;
@@ -159,6 +160,7 @@ body main .seccion2 .divSeccion2 .botonSeccion2 {
   border-radius: 5px;
   background-color: #1E3748;
   color: #C2B8AE;
+  text-decoration: none;
 }
 body main .seccion2 .divSeccion2 .botonSeccion2:hover {
   transition-duration: 0.3s;
@@ -169,143 +171,67 @@ body main .seccion3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.5em;
-  background-color: #C2B8AE;
+  padding: 2.5em 0em 3.5em;
+  background-color: #191610;
 }
 body main .seccion3 .tablaSeccion3 {
   text-align: center;
   vertical-align: middle;
-  border: #191610 solid;
-  color: #191610;
+  border: #C2B8AE solid;
+  color: #C2B8AE;
 }
 body main .seccion3 .tablaSeccion3 th {
   border-width: 0.05em;
-  border: #191610 solid;
+  border: #C2B8AE solid;
 }
 body main .seccion3 .tablaSeccion3 td {
   border-width: 0.05em;
-  border: #191610 solid;
+  border: #C2B8AE solid;
 }
 
-.accordion .bandaSeccionBlanca {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  background-color: #C2B8AE;
-}
-.accordion .bandaSeccionBlanca .accordion-header {
-  display: flex;
-  justify-content: center;
-}
-.accordion .bandaSeccionBlanca .accordion-header .accordion-button {
-  justify-content: center;
-  width: 60%;
-  margin: 0.5em;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8em;
-  border: #191610 solid 2px;
-  border-radius: 25px;
-  box-shadow: none;
-  background-color: #bb935e;
-  color: #191610;
-}
-.accordion .bandaSeccionBlanca .accordion-header .accordion-button:not(.collapsed) {
-  border-color: #191610;
-  box-shadow: none;
-  background-color: #dfb682;
-  color: #191610;
-}
-.accordion .bandaSeccionBlanca .accordion-header .accordion-button:focus {
-  border-color: #191610;
-  box-shadow: none;
-}
-.accordion .bandaSeccionBlanca .accordion-header .accordion-button::after {
-  margin-left: 0.5em;
-}
-.accordion .bandaSeccionOscura {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  background-color: #413e37;
-}
-.accordion .bandaSeccionOscura .accordion-header {
-  display: flex;
-  justify-content: center;
-}
-.accordion .bandaSeccionOscura .accordion-header .accordion-button {
-  justify-content: center;
-  width: 60%;
-  margin: 0.5em;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8em;
-  border: #191610 solid 2px;
-  border-radius: 25px;
-  box-shadow: none;
-  background-color: #bb935e;
-  color: #191610;
-}
-.accordion .bandaSeccionOscura .accordion-header .accordion-button:not(.collapsed) {
-  border-color: #191610;
-  box-shadow: none;
-  background-color: #dfb682;
-  color: #191610;
-}
-.accordion .bandaSeccionOscura .accordion-header .accordion-button:focus {
-  border-color: #191610;
-  box-shadow: none;
-}
-.accordion .bandaSeccionOscura .accordion-header .accordion-button::after {
-  margin-left: 0.5em;
-}
-
-.fondoOscuro .discografiaSeccionOscura {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-}
-.fondoOscuro .discografiaSeccionOscura .imagenDiscografia {
+.bandaSeccionBlanca {
   display: block;
-  width: 66%;
-  height: 66%;
-  margin: 0.2em auto;
-  border: #615d5d solid;
+  margin: auto;
+  max-width: 85%;
+  padding: 2.5em 0em 3.5em;
+  background-color: #191610;
+  border-top: solid #C2B8AE 3px;
 }
-.fondoOscuro .discografiaSeccionOscura .listaSeccionOscura {
-  margin: 0.5em 0.5em;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  color: #C2B8AE;
+.bandaSeccionBlanca div .parrafoBlanco {
+  text-align: start;
+  margin: 2.5em 1.5em;
 }
 
 .fondoBlanco {
-  background-color: #C2B8AE;
+  display: block;
+  margin: auto;
+  max-width: 85%;
+  padding: 2.5em 0em 3.5em;
+  background-color: #191610;
+  border-top: solid #C2B8AE 3px;
 }
 .fondoBlanco .discografiaSeccionBlanca {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .fondoBlanco .discografiaSeccionBlanca .imagenDiscografia {
   display: block;
   width: 66%;
   height: 66%;
-  margin: 0.2em auto;
+  margin: 3em auto;
   border: #615d5d solid;
 }
 .fondoBlanco .discografiaSeccionBlanca .listaSeccionBlanca {
   margin: 0.5em 0.5em;
   font-family: "Poppins", sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   letter-spacing: 1px;
   word-spacing: 2px;
   color: #C2B8AE;
-  color: #191610;
 }
 
 .contenedorMedia {
@@ -317,13 +243,13 @@ body main .seccion3 .tablaSeccion3 td {
   display: block;
   width: 75%;
   height: 75%;
-  margin: 0.2em auto;
+  margin: 0.5em auto;
   border: #C2B8AE solid;
 }
 .contenedorMedia .captionImagen {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 1em 0.2em 3em;
   color: #C2B8AE;
 }
@@ -384,49 +310,54 @@ body main .seccion3 .tablaSeccion3 td {
   padding: 0.5em;
   margin: 0.5em;
 }
-.formSeccion .formContacto {
+.formSeccion form {
+  display: block;
+  margin: auto;
+  max-width: 1020px;
+  background-color: #C2B8AE;
+}
+.formSeccion form .formContacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
-  background-color: #C2B8AE;
+  margin: 5em auto;
 }
-.formSeccion .formContacto .labelContacto {
+.formSeccion form .formContacto .labelContacto {
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   word-spacing: 2px;
   color: #191610;
   padding: 0.5em;
 }
-.formSeccion .formContacto .inputContacto {
+.formSeccion form .formContacto .inputContacto {
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   word-spacing: 2px;
   color: #191610;
   margin: 1em;
 }
-.formSeccion .formContacto .textContacto {
+.formSeccion form .formContacto .textContacto {
   width: 95%;
   margin: 0.125em 0.5em;
 }
-.formSeccion .formContacto .parrafoForm {
+.formSeccion form .formContacto .parrafoForm {
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   word-spacing: 2px;
   color: #191610;
   padding: 0.5em 0.5em 0;
 }
-.formSeccion .formContacto .contenedorSubmit {
+.formSeccion form .formContacto .contenedorSubmit {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 900px;
   margin-bottom: 1em;
 }
-.formSeccion .formContacto .contenedorSubmit .submit {
+.formSeccion form .formContacto .contenedorSubmit .submit {
   padding: 0.5em;
   font-size: larger;
   font-weight: bolder;
@@ -461,27 +392,13 @@ body main .seccion3 .tablaSeccion3 td {
     margin: 1.5em auto;
   }
   body main .seccion3 {
-    padding: 0.5em 4em;
+    padding: 3.5em 4em;
   }
   body main .seccion3 .tablaSeccion3 th {
     font-size: 1.25em;
   }
   body main .seccion3 .tablaSeccion3 td {
     font-size: 1.25em;
-  }
-  body main .accordion .bandaSeccionBlanca {
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
-  }
-  body main .accordion .bandaSeccionBlanca .accordion-header .accordion-button {
-    font-size: 1em;
-  }
-  body main .accordion .bandaSeccionOscura {
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
-  }
-  body main .accordion .bandaSeccionOscura .accordion-header .accordion-button {
-    font-size: 1em;
   }
   body main .fondoOscuro .discografiaSeccionOscura {
     flex-direction: row;
@@ -494,10 +411,9 @@ body main .seccion3 .tablaSeccion3 td {
   body main .fondoOscuro .discografiaSeccionOscura .imagenDiscografia {
     width: 75%;
     height: 75%;
-    margin: 0.4em auto;
   }
   body main .fondoBlanco .discografiaSeccionBlanca {
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
   }
@@ -507,7 +423,9 @@ body main .seccion3 .tablaSeccion3 td {
   body main .fondoBlanco .discografiaSeccionBlanca .imagenDiscografia {
     width: 75%;
     height: 75%;
-    margin: 0.4em auto;
+  }
+  body main .fondoBlanco .reverse {
+    flex-direction: row-reverse;
   }
   body main .contenedorMedia {
     grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "imagen5 imagen6" "imagen7 imagen8" "imagen9 imagen10" "imagen11 imagen12" "imagen13 imagen13";
@@ -561,38 +479,16 @@ body main .seccion3 .tablaSeccion3 td {
     height: 460px;
   }
   body main .seccion3 {
-    padding: 0.5em 7em;
+    padding: 2em 7em 4em;
   }
   body main .seccion3 .tablaSeccion3 {
-    max-width: 1020px;
+    max-width: 1120px;
   }
-  body main .accordion .bandaSeccionBlanca {
+  body main .fondoBlanco .discografiaSeccionBlanca {
     padding-top: 0.6em;
     padding-bottom: 0.6em;
   }
-  body main .accordion .bandaSeccionBlanca .accordion-header .accordion-button {
-    font-size: 1.1em;
-  }
-  body main .accordion .bandaSeccionOscura {
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-  }
-  body main .accordion .bandaSeccionOscura .accordion-header .accordion-button {
-    font-size: 1.1em;
-  }
-  body main .fondoOscuro .discografiaSeccionOscura {
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-  }
-  body main .fondoOscuro .discografiaSeccionOscura .listaSeccionOscura {
-    margin: 1em 1em;
-    font-size: 1.1em;
-  }
-  body main .fondoOscuro .discografiaSeccionBlanca {
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-  }
-  body main .fondoOscuro .discografiaSeccionBlanca .listaSeccionBlanca {
+  body main .fondoBlanco .discografiaSeccionBlanca .listaSeccionBlanca {
     margin: 1em 1em;
     font-size: 1.1em;
   }
@@ -602,10 +498,6 @@ body main .seccion3 .tablaSeccion3 td {
   body main .contenedorMedia .imagenesMedia {
     width: 80%;
     height: 60%;
-  }
-  body main .formSeccion {
-    padding: 2em;
-    margin: 2em;
   }
 }
 

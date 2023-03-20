@@ -43,7 +43,7 @@
             }
 
             .seccion3 {
-                padding: 0.5em 4em;
+                padding: 3.5em 4em;
 
                 .tablaSeccion3 {
 
@@ -57,58 +57,11 @@
                 }
             }
 
-            // Media Query seccion la banda
-            .accordion {
-
-                .bandaSeccionBlanca {
-                    padding-top: 0.4em;
-                    padding-bottom: 0.4em;
-
-                    .accordion-header {
-
-                        .accordion-button {
-                            font-size: 1em;
-                        }
-                    }
-                }
-
-                .bandaSeccionOscura {
-                    padding-top: 0.4em;
-                    padding-bottom: 0.4em;
-
-                    .accordion-header {
-
-                        .accordion-button {
-                            font-size: 1em;
-                        }
-                    }
-                }
-            }
-
             // Media Query seccion Discografia
-            .fondoOscuro {
-
-                .discografiaSeccionOscura {
-                    flex-direction: row;
-                    padding-top: 0.4em;
-                    padding-bottom: 0.4em;
-
-                    .listaSeccionOscura {
-                        margin: 0.75em 0.75em;
-                    }
-
-                    .imagenDiscografia {
-                        width: 75%;
-                        height: 75%;
-                        margin: 0.4em auto;
-                    }
-                }
-            }
-
             .fondoBlanco {
 
                 .discografiaSeccionBlanca {
-                    flex-direction: row-reverse;
+                    flex-direction: row;
                     padding-top: 0.4em;
                     padding-bottom: 0.4em;
 
@@ -119,8 +72,11 @@
                     .imagenDiscografia {
                         width: 75%;
                         height: 75%;
-                        margin: 0.4em auto;
                     }
+                }
+
+                .reverse{
+                    flex-direction: row-reverse;
                 }
             }
 
@@ -162,11 +118,11 @@
                     transform: none;
                     padding: 0;
                 }
-            }
 
-            .logoNav {
-                margin-right: 5em;
-                margin-left: 2em;
+                .logoNav {
+                    margin-right: 5em;
+                    margin-left: 2em;
+                }
             }
         }
 
@@ -202,7 +158,7 @@
             // Media Query de Index
             .seccion1 {
 
-                video {
+                .video {
 
                     iframe {
                         width: 840px;
@@ -212,54 +168,15 @@
             }
 
             .seccion3 {
-                padding: 0.5em 7em;
+                padding: 2em 7em 4em;
 
-                .tablaSeccion3 {
-                    max-width: 1020px;
-                }
-            }
-
-
-            // Media Query de seccion La Banda
-            .accordion {
-
-                .bandaSeccionBlanca {
-                    padding-top: 0.6em;
-                    padding-bottom: 0.6em;
-
-                    .accordion-header {
-
-                        .accordion-button {
-                            font-size: 1.1em;
-                        }
-                    }
-                }
-
-                .bandaSeccionOscura {
-                    padding-top: 0.6em;
-                    padding-bottom: 0.6em;
-
-                    .accordion-header {
-
-                        .accordion-button {
-                            font-size: 1.1em;
-                        }
-                    }
+                .tablaSeccion3{
+                    max-width: 1120px;
                 }
             }
 
             // Media Query de seccion Discografia
-            .fondoOscuro {
-
-                .discografiaSeccionOscura {
-                    padding-top: 0.6em;
-                    padding-bottom: 0.6em;
-
-                    .listaSeccionOscura {
-                        margin: 1em 1em;
-                        font-size: 1.1em;
-                    }
-                }
+            .fondoBlanco {
 
                 .discografiaSeccionBlanca {
                     padding-top: 0.6em;
@@ -280,12 +197,6 @@
                     width: 80%;
                     height: 60%;
                 }
-            }
-
-            // Media Query de seccion Contactos
-            .formSeccion {
-                padding: 2em;
-                margin: 2em;
             }
         }
     }

@@ -12,15 +12,18 @@ footer {
         color: $color_1;
     }
 
-    .itemContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 0px;
+    div{
 
-        .footerItems {
-            display: inline-block;
-            margin: 0.2em 0.2em;
+        .itemContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 0px;
+    
+            .footerItems {
+                display: inline-block;
+                margin: 0.2em 0.2em;
+            }
         }
     }
 

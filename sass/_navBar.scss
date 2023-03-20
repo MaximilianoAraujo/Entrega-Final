@@ -18,16 +18,19 @@ header {
     .navbar-toggler {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        border: #191610 solid 2px;
+        border: $color_1 solid 2px;
         border-radius: 50%;
     }
 
-    .navbarItems {
-        margin: 0.625em 1.25em;
-        font-family: $font-family_1;
-        font-size: 1em;
-        font-weight: bolder;
-        text-align: center;
-        color: $color_1;
+    div{
+
+        .navbarItems {
+            margin: 0.625em 1.25em;
+            font-family: $font-family_1;
+            font-size: 1em;
+            font-weight: bolder;
+            text-align: center;
+            color: $color_1;
+        }
     }
 }

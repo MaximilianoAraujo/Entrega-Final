@@ -9,7 +9,7 @@
 }
 
 @mixin parrafo {
-    margin: 1em 2em;
+    margin: 3em 2em;
     font-family: $font-family_1;
     font-size: 1em;
     letter-spacing: 1px;
@@ -26,39 +26,19 @@
     color: $color_2;
 }
 
-@mixin botonAcordion {
-    justify-content: center;
-    width: 60%;
-    margin: 0.5em;
-    font-family: $font-family_1;
-    font-size: 0.8em;
-    border: #191610 solid 2px;
-    border-radius: 25px;
-    box-shadow: none;
-    background-color: $background-color_6;
-    color: $color_1;
-
-    &:not(.collapsed) {
-        border-color: $border-color_1;
-        box-shadow: none;
-        background-color: $background-color_7;
-        color: $color_1;
-    }
-
-    &:focus {
-        border-color: $border-color_1;
-        box-shadow: none;
-    }
-
-    &::after {
-        margin-left: 0.5em;
-    }
+@mixin secciones {
+    display: block;
+    margin: auto;
+    max-width: 85%;
+    padding: 2.5em 0em 3.5em;
+    background-color: $background-color_2;
+    border-top: solid #C2B8AE 3px;
 }
 
 @mixin listaDiscografia {
     margin: 0.5em 0.5em;
     font-family: $font-family_1;
-    font-size: 0.9em;
+    font-size: 1em;
     letter-spacing: 1px;
     word-spacing: 2px;
     color: $color_2;
